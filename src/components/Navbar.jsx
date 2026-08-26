@@ -20,12 +20,12 @@ export default function Navbar() {
   return (
     <nav className="w-full relative flex justify-center items-center h-[88px] bg-transparent">
       <div className="w-[1304px] h-[88px] flex flex-row justify-between items-center px-0">
-        
+
         {/* Brand / Logo Lockup */}
         <div className="flex flex-row items-center gap-[9.85px] w-[321px] h-[64.46px]">
           {/* Logo Icon Area */}
           <div className="w-[62.67px] h-[63.56px] relative flex-shrink-0 flex items-center justify-center">
-             <img src={navLogo} alt="YCM Studio Logo" className="absolute inset-0 w-full h-full object-contain z-10" />
+            <img src={navLogo} alt="YCM Studio Logo" className="absolute inset-0 w-full h-full object-contain z-10" />
           </div>
 
           {/* Logo / Divider */}
@@ -53,11 +53,10 @@ export default function Navbar() {
                 className="flex flex-col items-start gap-[10px] group h-[30px] justify-start"
               >
                 <span
-                  className={`font-sans text-[15px] leading-[18px] transition-colors whitespace-nowrap ${
-                    isActive
+                  className={`font-sans text-[15px] leading-[18px] transition-colors whitespace-nowrap ${isActive
                       ? 'font-semibold text-[#B85E08]'
                       : 'font-medium text-[#141312] group-hover:text-[#B85E08]'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </span>
