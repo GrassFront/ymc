@@ -8,6 +8,8 @@ import Gallery from './pages/Gallery';
 import Media from './pages/Media';
 import Contact from './pages/Contact';
 
+import Awards from './pages/Awards';
+
 function App() {
   return (
     <Router>
@@ -19,6 +21,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/awards" element={<Awards />} />
             <Route path="/media" element={<Media />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
