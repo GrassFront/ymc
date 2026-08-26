@@ -1,10 +1,15 @@
+import React from 'react';
+import MediaHero from '../components/MediaHero';
+import MediaReach from '../components/MediaReach';
+import MediaPressKit from '../components/MediaPressKit';
+
 export default function Media() {
   return (
-    <div className="py-24 px-4 text-center">
-      <h1 className="font-serif text-display-medium mb-6">Awards & Media</h1>
-      <p className="font-sans text-body-16 text-dark-700">
-        Discover our accolades, press features, and media mentions.
-      </p>
+    <div className="flex flex-col min-h-screen pb-16">
+      <MediaHero />
+      <MediaReach />
+      <MediaPressKit />
+      {/* Additional sections can be added here */}
     </div>
   );
 }
