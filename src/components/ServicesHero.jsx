@@ -1,14 +1,6 @@
 import React from 'react';
 import serviceImage from '../assets/service1.png';
-
-const Ornament = () => (
-  <svg width="205" height="18" viewBox="0 0 205 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 9H80" stroke="#C89A58" strokeWidth="1" />
-    <path d="M125 9H205" stroke="#C89A58" strokeWidth="1" />
-    <path d="M102.5 15C109 15 115 12 115 9C115 6 109 3 102.5 3C96 3 90 6 90 9C90 12 96 15 102.5 15Z" stroke="#B56A15" strokeWidth="1" />
-    <path d="M102.5 11C103.6045 11 104.5 10.1045 104.5 9C104.5 7.89543 103.6045 7 102.5 7C101.3954 7 100.5 7.89543 100.5 9C100.5 10.1045 101.3954 11 102.5 11Z" fill="#B56A15" stroke="#B56A15" strokeWidth="1" />
-  </svg>
-);
+import ornament1Img from '../assets/Ornament1.png';
 
 export default function ServicesHero() {
   return (
@@ -32,8 +24,8 @@ export default function ServicesHero() {
             </h1>
           </div>
 
-          <div className="w-[205px] h-[18px] my-2 lg:my-0">
-            <Ornament />
+          <div className="w-[205px] h-[18px] my-2 lg:my-0 flex items-center">
+            <img src={ornament1Img} alt="Ornament" className="w-full h-full object-contain" />
           </div>
           
           <p className="font-sans font-normal text-[15.5px] leading-[25px] text-[#333330] max-w-[500px] lg:w-[500px]">
@@ -54,18 +46,23 @@ export default function ServicesHero() {
 
         {/* Right Image */}
         <div className="relative w-full h-[400px] lg:absolute lg:right-0 lg:top-0 lg:w-[784px] lg:h-[575px] shrink-0">
-          {/* Gradient Fade for Desktop */}
           <div 
-            className="hidden lg:block absolute left-0 top-0 w-[103px] h-full z-10" 
-            style={{
-              background: 'linear-gradient(88.3deg, #FCFAF7 1.44%, rgba(252, 250, 247, 0.92) 43.47%, rgba(252, 250, 247, 0) 92.03%)'
-            }}
-          />
-          <img 
-            src={serviceImage} 
-            alt="Chef Michael working in the kitchen" 
-            className="w-full h-full object-cover object-center"
-          />
+            className="w-full h-full lg:absolute lg:top-0 lg:left-0"
+            style={{ width: 'calc(100% + max(0px, 50vw - 720px))' }}
+          >
+            {/* Gradient Fade for Desktop */}
+            <div 
+              className="hidden lg:block absolute left-0 top-0 w-[103px] h-full z-10" 
+              style={{
+                background: 'linear-gradient(88.3deg, #FCFAF7 1.44%, rgba(252, 250, 247, 0.92) 43.47%, rgba(252, 250, 247, 0) 92.03%)'
+              }}
+            />
+            <img 
+              src={serviceImage} 
+              alt="Chef Michael working in the kitchen" 
+              className="w-full h-full object-cover object-left"
+            />
+          </div>
         </div>
 
       </div>

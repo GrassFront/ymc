@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import navLogo from '../../assets/navlogo.png';
+import botanicalOrnamentImg from '../../assets/Botanical_Ornament.png';
 
 /**
  * GalleryCTA Component
@@ -19,59 +20,11 @@ export default function GalleryCTA() {
         
         {/* Botanical Ornament */}
         <div className="w-[70px] h-[118px] flex justify-center items-center flex-shrink-0">
-          <svg
-            width="69"
-            height="116"
-            viewBox="0 0 69 116"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-[69px] h-[116px]"
-          >
-            {/* Main Stem */}
-            <path
-              d="M35 110C35 80 34 40 45 6"
-              stroke="#D5B892"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-            {/* Left & Right Leaf Layers */}
-            <path
-              d="M45 6C58 4 66 12 62 25C48 26 38 16 45 6Z"
-              stroke="#D5B892"
-              strokeWidth="1.5"
-              fill="none"
-            />
-            <path
-              d="M45 6C35 -4 20 2 24 16C36 22 44 14 45 6Z"
-              stroke="#D5B892"
-              strokeWidth="1.5"
-              fill="none"
-            />
-            <path
-              d="M40 35C58 30 68 40 62 55C46 56 36 46 40 35Z"
-              stroke="#D5B892"
-              strokeWidth="1.5"
-              fill="none"
-            />
-            <path
-              d="M40 35C20 25 8 36 12 50C26 55 38 46 40 35Z"
-              stroke="#D5B892"
-              strokeWidth="1.5"
-              fill="none"
-            />
-            <path
-              d="M37 65C54 60 64 70 58 84C42 85 32 75 37 65Z"
-              stroke="#D5B892"
-              strokeWidth="1.5"
-              fill="none"
-            />
-            <path
-              d="M37 65C17 55 5 66 9 80C23 85 35 76 37 65Z"
-              stroke="#D5B892"
-              strokeWidth="1.5"
-              fill="none"
-            />
-          </svg>
+          <img
+            src={botanicalOrnamentImg}
+            alt="Botanical Ornament"
+            className="w-[69px] h-[116px] object-contain"
+          />
         </div>
 
         {/* Headline Copy */}

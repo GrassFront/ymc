@@ -34,7 +34,7 @@ export const GALLERY_HERO_DATA = {
       height: 398,
       left: 171.11,
       top: 34,
-      rotation: 2,
+      rotation: -2,
       zIndex: 2,
       imgWidth: 418,
       imgHeight: 386,
@@ -42,7 +42,7 @@ export const GALLERY_HERO_DATA = {
     {
       id: 'live-fire-curry',
       title: 'Photo Card / Live Fire',
-      image: gallery3,
+      image: gallery2,
       alt: 'Gourmet curry dish with garnishes',
       width: 258,
       height: 216,
@@ -56,7 +56,7 @@ export const GALLERY_HERO_DATA = {
     {
       id: 'chef-plating-bw',
       title: 'Photo Card / Chef Plating BW',
-      image: gallery2,
+      image: gallery3,
       alt: 'Plated signature dish with place setting',
       width: 278,
       height: 330,

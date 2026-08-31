@@ -14,10 +14,10 @@ import awardFotterImg from '../../assets/awardfotter.png';
  */
 export default function ConsultingCTA() {
   return (
-    <section className="w-full bg-[#FAF8F4] flex justify-center items-center py-6 px-4 overflow-hidden">
-      {/* Consulting CTA / Desktop 1440 Container */}
-      <div className="w-full max-w-[1440px] min-h-[240px] bg-[#FDFBF7] rounded-[14px] overflow-hidden border border-[rgba(214,191,161,0.4)] shadow-sm flex flex-col lg:flex-row justify-between items-center lg:items-start">
-        
+    <section className="w-full bg-[#FDFBF7] flex justify-center items-center p-0 overflow-hidden">
+      {/* Consulting CTA / Full Width Container */}
+      <div className="w-full min-h-[240px] bg-[#FDFBF7] flex flex-col lg:flex-row justify-between items-center lg:items-start">
+
         {/* Left Photo (image 106) - 501px x 240px */}
         <div className="w-full lg:w-[501px] h-[220px] sm:h-[240px] relative flex-shrink-0 overflow-hidden">
           <img
@@ -29,12 +29,12 @@ export default function ConsultingCTA() {
 
         {/* Right CTA Content - 940px x 240px */}
         <div className="w-full lg:w-[940px] min-h-[240px] p-6 sm:p-[34px_48px_34px_54px] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 lg:gap-[24px]">
-          
+
           {/* Copy Block */}
           <div className="w-full lg:w-[485px] flex flex-col items-start gap-[10px]">
-            
+
             {/* Eyebrow */}
-            <span className="w-full sm:w-[185px] font-sans font-semibold text-[13px] leading-[16px] tracking-[0.14em] text-[#B45A08] uppercase">
+            <span className="w-full sm:w-auto font-sans font-semibold text-[13px] leading-[16px] tracking-[0.14em] text-[#B45A08] uppercase whitespace-nowrap">
               LET'S WORK TOGETHER
             </span>
 

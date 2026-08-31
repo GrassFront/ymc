@@ -4,6 +4,7 @@ import {
   MORE_AWARDS,
   AWARDS_QUOTE,
 } from '../../data/awardsData';
+import laurelIcon from '../../assets/Laurel.png';
 import navLogo from '../../assets/navlogo.png';
 import {
   Star,
@@ -70,7 +71,7 @@ export default function AwardsContent() {
         {/* 2. FEATURED AWARDS CARDS (4 Cards) */}
         {/* ========================================================================= */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px]">
-          {FEATURED_AWARDS.map((award) => (
+          {FEATURED_AWARDS.map((award, index) => (
             <div
               key={award.id}
               className="w-full max-w-[270px] mx-auto h-[330px] bg-white rounded-[8px] overflow-hidden shadow-sm border border-[rgba(214,191,161,0.4)] flex flex-col transition-all duration-300 hover:shadow-md"
@@ -89,40 +90,26 @@ export default function AwardsContent() {
                 
                 {/* Golden Laurel Icon */}
                 <div className="w-[42px] h-[42px] flex items-center justify-center flex-shrink-0">
-                  <svg
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18 30C11.3726 30 6 24.6274 6 18C6 14 8 10 11 8M18 30C24.6274 30 30 24.6274 30 18C30 14 28 10 25 8"
-                      stroke="#B45A08"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M10 12C9 14 9 17 10 19M26 12C27 14 27 17 26 19"
-                      stroke="#B45A08"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                    />
-                    <circle cx="18" cy="12" r="2" fill="#B45A08" />
-                  </svg>
+                  <img
+                    src={laurelIcon}
+                    alt="Laurel Icon"
+                    className="w-[36px] h-[36px] object-contain"
+                  />
                 </div>
 
                 {/* Copy Block */}
                 <div className="flex flex-col justify-start items-start gap-[3px] overflow-hidden">
-                  <h3 className="font-serif font-semibold text-[15px] sm:text-[16px] leading-[20px] text-[#131210] line-clamp-2">
+                  <h3 className="font-serif font-semibold text-[14px] sm:text-[15px] leading-[18px] text-[#131210] whitespace-pre-line">
                     {award.name}
                   </h3>
-                  <p className="font-sans font-normal text-[12.5px] leading-[17px] text-[#38332E] line-clamp-2">
+                  <p className="font-sans font-normal text-[12.5px] leading-[17px] text-[#38332E] line-clamp-2 whitespace-pre-line">
                     {award.description}
                   </p>
-                  <span className="font-sans font-semibold text-[13px] leading-[16px] text-[#B45A08]">
-                    {award.year}
-                  </span>
+                  {index === FEATURED_AWARDS.length - 1 && (
+                    <span className="font-sans font-semibold text-[13px] leading-[16px] text-[#B45A08]">
+                      2025
+                    </span>
+                  )}
                 </div>
 
               </div>
@@ -178,7 +165,7 @@ export default function AwardsContent() {
           </span>
 
           {/* Quote Body */}
-          <p className="w-full lg:w-[720px] font-serif font-semibold text-[22px] sm:text-[28px] lg:text-[30px] leading-[34px] sm:leading-[44px] text-[#1A1A1A]">
+          <p className="w-full lg:w-[720px] font-serif font-semibold text-[22px] sm:text-[28px] lg:text-[30px] leading-[34px] sm:leading-[44px] text-[#1A1A1A] whitespace-pre-line">
             {AWARDS_QUOTE.text}
           </p>
 
