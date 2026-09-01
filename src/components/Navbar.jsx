@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full relative flex justify-center items-center min-h-[88px] bg-transparent py-2">
-      <div className="w-full max-w-[1304px] min-h-[88px] flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 gap-4 md:gap-0">
+      <div className="w-full max-w-[1304px] min-h-[88px] flex flex-col xl:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 gap-4 xl:gap-0">
 
         {/* Brand / Logo Lockup */}
         <div className="flex flex-row items-center gap-[9.85px] max-w-full">
@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
 
         {/* Navigation / Desktop & Mobile */}
-        <div className="flex flex-row items-center gap-4 sm:gap-6 lg:gap-[38px] min-h-[30px] flex-wrap justify-center max-w-full">
+        <div className="flex flex-row items-center gap-3 sm:gap-5 md:gap-6 lg:gap-[28px] xl:gap-[38px] min-h-[30px] flex-wrap justify-center max-w-full">
           {NAV_ITEMS.map((item) => {
             const isActive = currentPath === item.path || (currentPath === '' && item.path === '/');
             return (
