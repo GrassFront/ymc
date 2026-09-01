@@ -40,12 +40,12 @@ export default function Footer() {
       <div className="w-full max-w-[1440px] flex flex-col">
 
         {/* Footer Main */}
-        <div className="flex flex-row justify-between items-start pt-[34px] pb-[25px] px-[86px] gap-[38px] w-full min-h-[320px]">
+        <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between items-start pt-[34px] pb-[25px] px-6 sm:px-12 lg:px-[86px] gap-8 lg:gap-[38px] w-full min-h-[320px]">
 
           {/* Brand Column */}
-          <div className="flex flex-col items-start gap-[16px] w-[340px]">
+          <div className="flex flex-col items-start gap-[16px] w-full sm:w-[340px]">
             {/* Brand / Chef Michael Lockup */}
-            <div className="flex flex-row items-center gap-[9.85px] w-[321px] h-[64.46px]">
+            <div className="flex flex-row items-center gap-[9.85px] max-w-full">
               {/* Logo Icon Area */}
               <div className="w-[62.67px] h-[63.56px] relative flex-shrink-0 flex items-center justify-center">
                 <img src={navLogo} alt="YCM Studio Logo" className="absolute inset-0 w-full h-full object-contain z-10" style={{ filter: 'brightness(0) invert(1)' }} />
@@ -55,18 +55,18 @@ export default function Footer() {
               <div className="w-[0.9px] h-[64.46px] bg-[rgba(38,36,33,0.28)] flex-shrink-0" />
 
               {/* Name / Studio */}
-              <div className="flex flex-col items-start gap-[6px] w-[198.74px]">
-                <span className="font-sans font-normal text-[25.9619px] leading-[31px] tracking-[0.895238px] text-[#FFFFFF] whitespace-nowrap">
+              <div className="flex flex-col items-start gap-[6px] max-w-[198.74px]">
+                <span className="font-sans font-normal text-[22px] sm:text-[25.9619px] leading-tight tracking-[0.895238px] text-[#FFFFFF] whitespace-nowrap">
                   YCM STUDIO
                 </span>
-                <span className="font-sans font-semibold text-[12px] leading-[15px] tracking-[1.79048px] text-[#FFFFFF] whitespace-nowrap">
+                <span className="font-sans font-semibold text-[11px] sm:text-[12px] leading-tight tracking-[1.79048px] text-[#FFFFFF] whitespace-nowrap">
                   HOSPITAL & CONSULTANCY
                 </span>
               </div>
             </div>
 
             {/* Bio */}
-            <p className="font-sans font-normal text-[14px] leading-[21px] text-[#FFFFFF] w-[330px]">
+            <p className="font-sans font-normal text-[14px] leading-[21px] text-[#FFFFFF] w-full max-w-[330px]">
               Celebrity Chef. Food Consultant.<br />
               Culinary Trainer. Crafting memorable<br />
               experiences through food, creativity,<br />
@@ -74,7 +74,7 @@ export default function Footer() {
             </p>
 
             {/* Social Links */}
-            <div className="flex flex-row items-start gap-[18px] h-[46px] mt-[4px]">
+            <div className="flex flex-row items-start gap-[14px] sm:gap-[18px] min-h-[46px] mt-[4px] flex-wrap">
               <a href="#" className="w-[46px] h-[46px] rounded-full border-[1.5px] border-[#B86E2B] flex items-center justify-center hover:bg-[#B86E2B]/20 transition-colors group">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#FFFFFF]">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links Column */}
-          <div className="flex flex-col items-start gap-[13px] w-[150px]">
+          <div className="flex flex-col items-start gap-[13px] w-full sm:w-[150px]">
             <h3 className="font-sans font-extrabold text-[14px] leading-[17px] tracking-[0.16em] text-[#FFFFFF] uppercase mb-[4px]">
               QUICK LINKS
             </h3>
@@ -122,7 +122,7 @@ export default function Footer() {
           </div>
 
           {/* Services Column */}
-          <div className="flex flex-col items-start gap-[13px] w-[250px]">
+          <div className="flex flex-col items-start gap-[13px] w-full sm:w-[250px]">
             <h3 className="font-sans font-extrabold text-[14px] leading-[17px] tracking-[0.16em] text-[#FFFFFF] uppercase mb-[4px]">
               SERVICES
             </h3>
@@ -134,7 +134,7 @@ export default function Footer() {
           </div>
 
           {/* Media Column */}
-          <div className="flex flex-col items-start gap-[13px] w-[160px]">
+          <div className="flex flex-col items-start gap-[13px] w-full sm:w-[160px]">
             <h3 className="font-sans font-extrabold text-[14px] leading-[17px] tracking-[0.16em] text-[#FFFFFF] uppercase mb-[4px]">
               MEDIA
             </h3>
@@ -146,12 +146,12 @@ export default function Footer() {
           </div>
 
           {/* Contact Column */}
-          <div className="flex flex-col items-start gap-[16px] w-[250px]">
+          <div className="flex flex-col items-start gap-[16px] w-full sm:w-[250px]">
             <h3 className="font-sans font-extrabold text-[14px] leading-[17px] tracking-[0.16em] text-[#FFFFFF] uppercase mb-[4px]">
               CONTACT
             </h3>
 
-            <div className="flex flex-row items-start gap-[13px] w-[250px]">
+            <div className="flex flex-row items-start gap-[13px] w-full max-w-[250px]">
               <MapPin className="w-[18px] h-[18px] text-[#B86D29] flex-shrink-0 mt-[2px]" strokeWidth={1.6} />
               <span className="font-sans font-normal text-[14px] leading-[21px] text-[#FFFFFF]">
                 YCM Studio,<br />
@@ -159,21 +159,21 @@ export default function Footer() {
               </span>
             </div>
 
-            <div className="flex flex-row items-start gap-[13px] w-[250px]">
+            <div className="flex flex-row items-start gap-[13px] w-full max-w-[250px]">
               <Phone className="w-[18px] h-[18px] text-[#B86D29] flex-shrink-0" strokeWidth={1.6} />
               <a href="tel:+919876543210" className="font-sans font-normal text-[14px] leading-[21px] text-[#FFFFFF] hover:text-[#D79C4C] transition-colors">
                 +91 98765 43210
               </a>
             </div>
 
-            <div className="flex flex-row items-start gap-[13px] w-[250px]">
+            <div className="flex flex-row items-start gap-[13px] w-full max-w-[250px]">
               <Mail className="w-[18px] h-[18px] text-[#B86D29] flex-shrink-0" strokeWidth={1.5} />
               <a href="mailto:hello@chefmichael.in" className="font-sans font-normal text-[14px] leading-[21px] text-[#FFFFFF] hover:text-[#D79C4C] transition-colors">
                 hello@chefmichael.in
               </a>
             </div>
 
-            <div className="flex flex-row items-start gap-[13px] w-[250px]">
+            <div className="flex flex-row items-start gap-[13px] w-full max-w-[250px]">
               <Globe className="w-[18px] h-[18px] text-[#B86D29] flex-shrink-0" strokeWidth={1.5} />
               <a href="https://www.chefmichael.in" target="_blank" rel="noreferrer" className="font-sans font-normal text-[14px] leading-[21px] text-[#FFFFFF] hover:text-[#D79C4C] transition-colors">
                 www.chefmichael.in
@@ -184,7 +184,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-row justify-between items-center px-[80px] w-full h-[70px] border-t border-[#333330]">
+        <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-12 lg:px-[80px] py-4 sm:py-0 w-full min-h-[70px] border-t border-[#333330] gap-2 text-center sm:text-left">
           <span className="font-sans font-normal text-[12.5px] leading-[15px] text-[#FFFFFF] opacity-50">
             © 2025 Chef Michael | YCM Studio. All Rights Reserved.
           </span>

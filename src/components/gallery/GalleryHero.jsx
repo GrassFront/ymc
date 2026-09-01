@@ -47,10 +47,10 @@ export default function GalleryHero() {
         </div>
 
         {/* Right Collage Section: Gallery Hero / Collage */}
-        <div className="w-full lg:w-[820px] h-[380px] sm:h-[460px] lg:h-[524px] relative flex justify-center items-center isolate overflow-hidden lg:overflow-visible my-4 lg:my-0">
+        <div className="w-full max-w-full lg:w-[820px] h-[300px] xs:h-[350px] sm:h-[460px] lg:h-[524px] relative flex justify-center items-center isolate overflow-hidden lg:overflow-visible my-2 lg:my-0">
           
           {/* Scaling wrapper to preserve exact pixel positions at all screen sizes */}
-          <div className="w-[820px] h-[524px] relative transform scale-[0.45] xs:scale-[0.55] sm:scale-[0.72] md:scale-[0.85] lg:scale-100 origin-center lg:origin-right flex-shrink-0">
+          <div className="w-[820px] h-[524px] relative transform scale-[0.34] min-[360px]:scale-[0.42] sm:scale-[0.68] md:scale-[0.85] lg:scale-100 origin-center lg:origin-right flex-shrink-0">
             
             {/* Botanical Branch / Background Accent Vector */}
             <BotanicalBranch />

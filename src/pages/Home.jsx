@@ -256,38 +256,38 @@ export default function Home() {
       </div>
 
       {/* Desktop 1440 Container for Content */}
-      <div className="relative w-full max-w-[1440px] h-[836px] shrink-0 z-10 pointer-events-auto">
+      <div className="relative w-full max-w-[1440px] min-h-[836px] lg:h-[836px] shrink-0 z-10 pointer-events-auto flex flex-col justify-between pt-6 lg:pt-0 pb-12 lg:pb-0 px-4 sm:px-8 lg:px-[110px]">
 
         {/* Hero Editable Content */}
-        <div className="absolute left-[110px] top-[45px] w-[541px] h-[585px]">
+        <div className="relative lg:absolute left-0 lg:left-[110px] top-0 lg:top-[45px] w-full max-w-[541px] min-h-[585px] flex flex-col justify-start">
 
           {/* Kicker */}
-          <div className="absolute left-0 top-[2px] flex flex-row items-center gap-[7px]">
-            <span className="font-semibold text-[16px] leading-[19px] tracking-[1.4px] text-[#B55906]">
+          <div className="flex flex-row items-center gap-[7px] mb-3">
+            <span className="font-semibold text-[14px] sm:text-[16px] leading-[19px] tracking-[1.4px] text-[#B55906]">
               OYE HOYE HOYE HOYE
             </span>
             <div className="w-[30px] h-[2px] bg-[#B55906]"></div>
           </div>
 
           {/* Headline */}
-          <div className="absolute left-0 top-[36px] w-[541px] h-[208px]">
-            <h1 className="font-['Playfair_Display'] font-medium text-[78px] leading-[104px] tracking-[0.02em] text-[#090807] m-0">
+          <div className="w-full max-w-[541px]">
+            <h1 className="font-['Playfair_Display'] font-medium text-[42px] sm:text-[60px] lg:text-[78px] leading-[1.1] sm:leading-[1.15] lg:leading-[104px] tracking-[0.02em] text-[#090807] m-0">
               Turning Every
             </h1>
-            <h1 className="font-['Playfair_Display'] font-medium text-[78px] leading-[104px] tracking-[0.02em] text-[#090807] m-0">
+            <h1 className="font-['Playfair_Display'] font-medium text-[42px] sm:text-[60px] lg:text-[78px] leading-[1.1] sm:leading-[1.15] lg:leading-[104px] tracking-[0.02em] text-[#090807] m-0">
               Dish Into A
             </h1>
           </div>
 
           {/* Script */}
           <div
-            className="absolute left-[-8.15px] top-[229.78px] w-[430px] h-[90px] font-['Allura'] font-normal text-[72px] leading-[78px] tracking-[0px] text-[#D4A017] -rotate-[3.68deg]"
+            className="w-full max-w-[430px] font-['Allura'] font-normal text-[52px] sm:text-[64px] lg:text-[72px] leading-tight lg:leading-[78px] tracking-[0px] text-[#D4A017] -rotate-[3.68deg] my-2"
           >
             Masterpiece!
           </div>
 
           {/* Ornament */}
-          <div className="absolute left-0 top-[340px] w-[158px] h-[12px] flex items-center justify-center">
+          <div className="w-[158px] h-[12px] flex items-center justify-center my-3">
             <svg width="158" height="12" viewBox="0 0 158 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="0" y1="6" x2="70" y2="6" stroke="#B45A08" strokeWidth="1" />
               <line x1="88" y1="6" x2="158" y2="6" stroke="#B45A08" strokeWidth="1" />
@@ -296,30 +296,28 @@ export default function Home() {
           </div>
 
           {/* Roles */}
-          <div className="absolute left-0 top-[366px] w-[470px] h-[28px] font-['Inter'] font-semibold text-[15.5px] leading-[24px] tracking-[0px] text-[#090807]">
+          <div className="w-full max-w-[470px] font-['Inter'] font-semibold text-[14px] sm:text-[15.5px] leading-[24px] tracking-[0px] text-[#090807] mb-3">
             Celebrity Chef • Food Consultant • Culinary Trainer
           </div>
 
           {/* Description */}
-          <div className="absolute left-0 top-[410px] w-[465px] h-[80px] font-['Inter'] font-normal text-[15.5px] leading-[25px] tracking-[0px] text-[#090807]">
-            Chef Michael brings 15+ years of culinary excellence<br />
-            to kitchens, brands, and dining tables across<br />
-            India and beyond.
+          <div className="w-full max-w-[465px] font-['Inter'] font-normal text-[14px] sm:text-[15.5px] leading-[25px] tracking-[0px] text-[#090807] mb-6">
+            Chef Michael brings 15+ years of culinary excellence to kitchens, brands, and dining tables across India and beyond.
           </div>
 
           {/* Buttons Container */}
-          <div className="absolute left-0 top-[505px] flex flex-row gap-[25px]">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-[25px] w-full max-w-[480px]">
             {/* Primary CTA */}
-            <button className="box-border flex flex-row justify-center items-center px-[24px] h-[48px] bg-[#D4A017] rounded-[5px] gap-[16px] hover:bg-[#c29215] transition-colors group">
-              <span className="font-medium text-[16px] leading-[20px] text-[#FAF8F4]">
+            <button className="box-border flex flex-row justify-center items-center px-[24px] h-[48px] bg-[#D4A017] rounded-[5px] gap-[16px] hover:bg-[#c29215] transition-colors group cursor-pointer w-full sm:w-auto">
+              <span className="font-medium text-[16px] leading-[20px] text-[#FAF8F4] whitespace-nowrap">
                 Book Chef Michael
               </span>
               <ArrowRight className="w-[20px] h-[20px] text-[#FAF8F4] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
             </button>
 
             {/* Secondary CTA */}
-            <button className="box-border flex flex-row justify-center items-center px-[24px] h-[48px] bg-[#FAF8F4] border border-[#B45A08] rounded-[5px] gap-[16px] hover:bg-[#F2EFE8] transition-colors group">
-              <span className="font-medium text-[16px] leading-[20px] text-[#B45A08]">
+            <button className="box-border flex flex-row justify-center items-center px-[24px] h-[48px] bg-[#FAF8F4] border border-[#B45A08] rounded-[5px] gap-[16px] hover:bg-[#F2EFE8] transition-colors group cursor-pointer w-full sm:w-auto">
+              <span className="font-medium text-[16px] leading-[20px] text-[#B45A08] whitespace-nowrap">
                 Explore Services
               </span>
               <ArrowRight className="w-[20px] h-[20px] text-[#D4A017] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
@@ -329,25 +327,25 @@ export default function Home() {
         </div>
 
         {/* Stats Panel */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-[641px] w-[1272px] h-[160px] bg-[#FEFDFB] rounded-[16px] shadow-[0px_8px_28px_rgba(64,46,26,0.12)] flex items-center px-[25px]">
+        <div className="relative lg:absolute left-0 lg:left-1/2 lg:-translate-x-1/2 top-0 lg:top-[641px] mt-8 lg:mt-0 w-full max-w-[1272px] min-h-[160px] h-auto bg-[#FEFDFB] rounded-[16px] shadow-[0px_8px_28px_rgba(64,46,26,0.12)] flex items-center p-4 sm:px-[25px] py-6">
 
-          <div className="flex flex-row items-center w-full justify-between px-4">
+          <div className="flex flex-col sm:flex-row flex-wrap lg:flex-nowrap items-center w-full justify-between gap-6 lg:gap-4 px-2 sm:px-4">
             {stats.map((stat, index) => (
               <React.Fragment key={index}>
 
                 {/* Metric */}
-                <div className="flex flex-row items-center gap-[24px] w-[250px]">
+                <div className="flex flex-row items-center gap-[16px] sm:gap-[24px] w-full sm:w-[220px] lg:w-[250px] justify-center sm:justify-start">
                   {/* Icon */}
-                  <div className="w-[56px] h-[56px] shrink-0 flex items-center justify-center">
+                  <div className="w-[48px] sm:w-[56px] h-[48px] sm:h-[56px] shrink-0 flex items-center justify-center">
                     {stat.icon}
                   </div>
 
                   {/* Content */}
                   <div className="flex flex-col gap-1">
-                    <div className="font-['Playfair_Display'] font-semibold text-[38px] leading-[42px] text-[#1A1A1A]">
+                    <div className="font-['Playfair_Display'] font-semibold text-[32px] sm:text-[38px] leading-[42px] text-[#1A1A1A]">
                       {stat.value}
                     </div>
-                    <div className="font-medium text-[14px] leading-[19px] text-[#1A1A1A] whitespace-pre-line">
+                    <div className="font-medium text-[13px] sm:text-[14px] leading-[19px] text-[#1A1A1A] whitespace-pre-line">
                       {stat.label}
                     </div>
                   </div>
@@ -355,7 +353,7 @@ export default function Home() {
 
                 {/* Divider (except for last item) */}
                 {index < stats.length - 1 && (
-                  <div className="w-[1px] h-[88px] bg-[#B85E08] opacity-[0.22]"></div>
+                  <div className="hidden lg:block w-[1px] h-[88px] bg-[#B85E08] opacity-[0.22]"></div>
                 )}
 
               </React.Fragment>
@@ -367,46 +365,46 @@ export default function Home() {
       </div>
 
       {/* --- Second Part: Culinary Visionary --- */}
-      <div className="w-full bg-[#FAF7EF] flex justify-center py-[20px] shrink-0 z-20 relative">
-        <div className="w-[1440px] flex justify-center items-center">
+      <div className="w-full bg-[#FAF7EF] flex justify-center py-[40px] lg:py-[20px] shrink-0 z-20 relative">
+        <div className="w-full max-w-[1440px] flex justify-center items-center px-4 sm:px-8 lg:px-0">
 
           {/* Main Flex Container */}
-          <div className="w-[1277px] flex flex-row justify-between items-center gap-[18px]">
+          <div className="w-full max-w-[1277px] flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-[18px]">
 
             {/* Left Image (Chef) */}
-            <div className="relative w-[520px] h-[494px] shrink-0 flex items-center justify-center">
-              <img src={frame152} alt="Chef Michael" className="max-w-full max-h-full object-contain" />
+            <div className="relative w-full max-w-[520px] h-auto max-h-[494px] shrink-0 flex items-center justify-center">
+              <img src={frame152} alt="Chef Michael" className="w-full h-auto max-h-[494px] object-contain" />
             </div>
 
             {/* Right Content Area */}
-            <div className="flex flex-row justify-between items-start w-[757px] h-[398px]">
+            <div className="flex flex-col sm:flex-row justify-between items-start w-full lg:w-[757px] min-h-[398px] gap-8 sm:gap-4">
 
               {/* Text and Button Column */}
-              <div className="flex flex-col items-start gap-[34px] w-[454px]">
+              <div className="flex flex-col items-start gap-[24px] sm:gap-[34px] w-full max-w-[454px]">
 
                 {/* Text Block */}
-                <div className="flex flex-col items-start gap-[16px] w-[454px]">
+                <div className="flex flex-col items-start gap-[16px] w-full">
 
                   {/* Headings */}
                   <div className="flex flex-col items-start gap-[17px] w-full">
                     {/* Kicker */}
-                    <div className="font-semibold text-[16px] leading-[19px] tracking-[1.2px] text-[#B45A08] uppercase">
+                    <div className="font-semibold text-[14px] sm:text-[16px] leading-[19px] tracking-[1.2px] text-[#B45A08] uppercase">
                       COOK. CREATE. CONNECT.
                     </div>
 
                     {/* Main Headings */}
                     <div className="flex flex-col items-start gap-[2px] w-full">
-                      <div className="font-['Playfair_Display'] font-semibold text-[40px] leading-[43px] text-[#0E0D0C]">
+                      <div className="font-['Playfair_Display'] font-semibold text-[32px] sm:text-[40px] leading-tight sm:leading-[43px] text-[#0E0D0C]">
                         More Than A Chef,
                       </div>
-                      <div className="flex flex-row items-center gap-[10px]">
-                        <span className="font-['Playfair_Display'] font-semibold text-[40px] leading-[53px] text-[#0E0D0C]">
+                      <div className="flex flex-row items-center gap-[10px] flex-wrap">
+                        <span className="font-['Playfair_Display'] font-semibold text-[32px] sm:text-[40px] leading-tight sm:leading-[53px] text-[#0E0D0C]">
                           A
                         </span>
-                        <span className="font-['Playfair_Display'] italic font-normal text-[38px] leading-[51px] text-[#B45A08]">
+                        <span className="font-['Playfair_Display'] italic font-normal text-[30px] sm:text-[38px] leading-tight sm:leading-[51px] text-[#B45A08]">
                           Culinary
                         </span>
-                        <span className="font-['Playfair_Display'] font-semibold text-[40px] leading-[53px] text-[#0E0D0C]">
+                        <span className="font-['Playfair_Display'] font-semibold text-[32px] sm:text-[40px] leading-tight sm:leading-[53px] text-[#0E0D0C]">
                           Visionary
                         </span>
                       </div>
@@ -414,13 +412,8 @@ export default function Home() {
                   </div>
 
                   {/* Description */}
-                  <div className="w-[454px] h-[138px] font-['Inter'] font-normal text-[14.5px] leading-[23px] tracking-[0px] text-[#0E0D0C] whitespace-nowrap">
-                    Chef Michael is a celebrity chef, culinary trainer and hospitality<br />
-                    consultant with over 15 years of experience across luxury hotel<br />
-                    kitchens, restaurant consulting and digital media. Through YCM<br />
-                    Studio, he has built a community of over 2 million food enthusiasts<br />
-                    while helping aspiring chefs, restaurants and brands achieve<br />
-                    measurable culinary success.
+                  <div className="w-full font-['Inter'] font-normal text-[14px] sm:text-[14.5px] leading-[23px] tracking-[0.01em] text-[#0E0D0C]">
+                    Chef Michael is a celebrity chef, culinary trainer and hospitality consultant with over 15 years of experience across luxury hotel kitchens, restaurant consulting and digital media. Through YCM Studio, he has built a community of over 2 million food enthusiasts while helping aspiring chefs, restaurants and brands achieve measurable culinary success.
                   </div>
                 </div>
 
@@ -434,10 +427,10 @@ export default function Home() {
               </div>
 
               {/* Gallery / Culinary Moments */}
-              <div className="flex flex-col items-start gap-[4px] w-[268px] shrink-0">
-                <img src={hero3} alt="Culinary Moment 1" className="w-[268px] h-[130px] object-cover" />
-                <img src={hero4} alt="Culinary Moment 2" className="w-[268px] h-[130px] object-cover" />
-                <img src={hero5} alt="Culinary Moment 3" className="w-[268px] h-[130px] object-cover" />
+              <div className="flex flex-row sm:flex-col items-center sm:items-start gap-[8px] sm:gap-[4px] w-full sm:w-[268px] shrink-0 overflow-x-auto">
+                <img src={hero3} alt="Culinary Moment 1" className="w-[200px] sm:w-[268px] h-[130px] object-cover rounded sm:rounded-none shrink-0" />
+                <img src={hero4} alt="Culinary Moment 2" className="w-[200px] sm:w-[268px] h-[130px] object-cover rounded sm:rounded-none shrink-0" />
+                <img src={hero5} alt="Culinary Moment 3" className="w-[200px] sm:w-[268px] h-[130px] object-cover rounded sm:rounded-none shrink-0" />
               </div>
 
             </div>
@@ -446,45 +439,45 @@ export default function Home() {
       </div>
 
       {/* --- Third Part: Signature Dishes --- */}
-      <div className="w-full bg-[#FFFFFF] flex justify-center shrink-0 z-10 relative overflow-hidden h-[866px]">
-        <div className="w-[1440px] relative h-[866px]">
+      <div className="w-full bg-[#FFFFFF] flex justify-center shrink-0 z-10 relative overflow-hidden py-12 lg:py-[58px] min-h-[866px]">
+        <div className="w-full max-w-[1440px] relative min-h-[754px] px-4 sm:px-8 lg:px-[86px]">
 
-          {/* Frame 173 */}
-          <div className="absolute left-[86px] top-[58px] w-[1300px] h-[754px] flex flex-row items-center gap-[30px]">
+          {/* Main Container */}
+          <div className="w-full max-w-[1300px] flex flex-col lg:flex-row items-center gap-[30px] mx-auto">
 
-            {/* Frame 149 (Main Content) */}
-            <div className="flex flex-col items-center gap-[32px] w-[1226px] h-[754px]">
+            {/* Main Content */}
+            <div className="flex flex-col items-center gap-[32px] w-full max-w-[1226px]">
 
-              {/* Frame 148 */}
-              <div className="flex flex-col items-start gap-[52px] w-[1226px] h-[666px]">
+              {/* Header & Cards Container */}
+              <div className="flex flex-col items-start gap-[40px] lg:gap-[52px] w-full">
 
-                {/* Frame 147 (Header Section) */}
-                <div className="flex flex-col items-start gap-[24px] w-[1226px] h-[168px]">
+                {/* Header Section */}
+                <div className="flex flex-col items-start gap-[24px] w-full">
 
-                  {/* Frame 144 (Eyebrow) */}
-                  <div className="flex flex-row items-center gap-[14px] w-[377px] h-[19px]">
+                  {/* Eyebrow */}
+                  <div className="flex flex-row items-center gap-[14px] w-full max-w-[377px]">
                     <div className="w-[60px] h-[1px] bg-[#B45A08] opacity-[0.35] shrink-0" />
-                    <span className="font-['Inter'] font-semibold text-[16px] leading-[19px] tracking-[5px] text-[#B45A08] uppercase whitespace-nowrap shrink-0">
+                    <span className="font-['Inter'] font-semibold text-[14px] sm:text-[16px] leading-[19px] tracking-[4px] sm:tracking-[5px] text-[#B45A08] uppercase whitespace-nowrap shrink-0">
                       SIGNATURE DISHES
                     </span>
                     <div className="w-[60px] h-[1px] bg-[#B45A08] opacity-[0.35] shrink-0" />
                   </div>
 
-                  {/* Frame 146 */}
-                  <div className="flex flex-row justify-between items-center gap-[292px] w-[1226px] h-[125px]">
+                  {/* Headings & Subtext */}
+                  <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-[200px] w-full">
 
-                    {/* Frame 145 (Headings) */}
-                    <div className="flex flex-col items-start gap-[7px] w-[435px]">
-                      <h2 className="font-['Playfair_Display'] font-semibold text-[44px] leading-[59px] text-[#0E0D0C] m-0">
+                    {/* Headings */}
+                    <div className="flex flex-col items-start gap-[7px] w-full max-w-[435px]">
+                      <h2 className="font-['Playfair_Display'] font-semibold text-[32px] sm:text-[44px] leading-tight sm:leading-[59px] text-[#0E0D0C] m-0">
                         Crafted With Passion,
                       </h2>
-                      <h2 className="font-['Playfair_Display'] italic font-normal text-[44px] leading-[59px] text-[#D4A017] m-0">
+                      <h2 className="font-['Playfair_Display'] italic font-normal text-[32px] sm:text-[44px] leading-tight sm:leading-[59px] text-[#D4A017] m-0">
                         Served With Purpose.
                       </h2>
                     </div>
 
-                    {/* Section / Introduction */}
-                    <div className="w-[443px] font-['Inter'] font-normal text-[16px] leading-[28px] text-[#0E0D0C]">
+                    {/* Section Introduction */}
+                    <div className="w-full max-w-[443px] font-['Inter'] font-normal text-[15px] sm:text-[16px] leading-[28px] text-[#0E0D0C]">
                       A curated look at Chef Michael's signature creations — made with the finest ingredients and a touch of creativity.
                     </div>
 
@@ -492,9 +485,9 @@ export default function Home() {
                 </div>
 
                 {/* Dish Cards Row */}
-                <div className="flex flex-row items-start gap-[14px] w-[1226px] h-[446px]">
+                <div className="flex flex-row flex-wrap xl:flex-nowrap justify-center items-start gap-[14px] w-full">
                   {signatureDishes.map((dish, idx) => (
-                    <div key={idx} className="w-[296px] h-[446px] bg-[#FEFDFB] rounded-[10px] overflow-hidden flex flex-col items-center">
+                    <div key={idx} className="w-[296px] h-[446px] bg-[#FEFDFB] rounded-[10px] overflow-hidden flex flex-col items-center border border-black/5 shadow-sm shrink-0">
                       {/* Image */}
                       <div className="w-[296px] h-[300px] shrink-0">
                         <img src={dish.image} alt={dish.title} className="w-full h-full object-cover" />
@@ -529,8 +522,8 @@ export default function Home() {
 
             </div>
 
-            {/* Frame 172 (Carousel Arrows) */}
-            <div className="flex flex-col items-start gap-[18px] w-[44px] h-[106px] shrink-0">
+            {/* Carousel Arrows */}
+            <div className="hidden lg:flex flex-col items-start gap-[18px] w-[44px] h-[106px] shrink-0">
               <button className="box-border flex items-center justify-center w-[44px] h-[44px] rounded-full border border-[rgba(180,90,8,0.45)] hover:bg-[#FAF8F4] transition-colors cursor-pointer group">
                 <ArrowLeft className="w-[18px] h-[18px] text-[#B45A08] group-hover:-translate-x-0.5 transition-transform" strokeWidth={1.5} />
               </button>
@@ -760,20 +753,20 @@ export default function Home() {
         <div className="flex flex-col items-center gap-[10px] w-full max-w-[1000px] mx-auto min-h-[228px]">
           
           {/* Eyebrow */}
-          <div className="flex flex-row justify-center items-center gap-[18px] w-full max-w-[390px] h-[25px]">
-            <div className="w-[72px] h-[1px] bg-[#C99C5C]" />
-            <span className="w-[151px] font-sans font-semibold text-[16px] leading-[19px] text-center tracking-[0.18em] text-[#B45A08] uppercase">
+          <div className="flex flex-row justify-center items-center gap-[18px] w-full max-w-[390px] min-h-[25px]">
+            <div className="w-[40px] sm:w-[72px] h-[1px] bg-[#C99C5C] shrink-0" />
+            <span className="font-sans font-semibold text-[14px] sm:text-[16px] leading-[19px] text-center tracking-[0.18em] text-[#B45A08] uppercase whitespace-nowrap">
               CONSULTANCY
             </span>
-            <div className="w-[72px] h-[1px] bg-[#C99C5C]" />
+            <div className="w-[40px] sm:w-[72px] h-[1px] bg-[#C99C5C] shrink-0" />
           </div>
 
           {/* Headline */}
-          <div className="flex flex-row justify-center items-center gap-[8px] flex-wrap h-auto md:h-[72px] mt-[10px]">
-            <h2 className="font-serif font-semibold text-[42px] leading-[56px] text-[#0E0D0C] m-0">
+          <div className="flex flex-row justify-center items-center gap-[8px] flex-wrap h-auto mt-[10px] text-center">
+            <h2 className="font-serif font-semibold text-[32px] sm:text-[42px] leading-tight sm:leading-[56px] text-[#0E0D0C] m-0">
               Delivered. Designed.
             </h2>
-            <h2 className="font-serif italic font-normal text-[42px] leading-[56px] text-[#D4A017] m-0">
+            <h2 className="font-serif italic font-normal text-[32px] sm:text-[42px] leading-tight sm:leading-[56px] text-[#D4A017] m-0">
               Delicious.
             </h2>
           </div>
