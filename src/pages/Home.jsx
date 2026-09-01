@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import vectorLogo from '../assets/vectorold.png';
 import heroImage from '../assets/hero1 (1).png';
 import capicon from '../assets/capicon.png';
 import commicon from '../assets/commicon.png';
@@ -28,8 +29,8 @@ import wickedLogo from '../assets/wicked.png';
 import kamaaLogo from '../assets/kamaa.png';
 import jankiLogo from '../assets/janki.png';
 import woodenLogo from '../assets/wooden.png';
-import vectorImage from '../assets/Vector.png';
-import ornamentImg from '../assets/Ornament.png';
+import vectorImage from '../assets/vectorold.png';
+import ornamentImg from '../assets/Ornament2.png';
 
 // Consultancy Project Images
 import kamaaProjectImg from '../assets/kamaclub.png';
@@ -579,7 +580,7 @@ export default function Home() {
                 <div className="flex flex-row justify-center items-center w-[92px] h-[92px] shrink-0 relative">
                   <img src={service.icon} alt={service.title} className="absolute inset-0 w-full h-full object-contain" />
                 </div>
-                
+
                 <div className="w-[1px] h-[12px] shrink-0" />
 
                 {/* Number Row */}
@@ -641,21 +642,21 @@ export default function Home() {
       {/* --- Fifth Part: Trusted Brands --- */}
       <div className="w-full bg-[#FFFFFF] flex flex-col items-center justify-center py-[64px] px-4 font-sans relative">
         <div className="flex flex-col items-center w-full max-w-[1440px]">
-          
+
           {/* Eyebrow */}
           <div className="flex flex-row items-center gap-[14px] h-[19px]">
             <div className="w-[28px] flex items-center justify-center">
-               <svg width="28" height="10" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 5H27M27 5L23 1M27 5L23 9" stroke="#B45A08" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
-               </svg>
+              <svg width="28" height="10" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5H27M27 5L23 1M27 5L23 9" stroke="#B45A08" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </div>
             <span className="font-semibold text-[16px] leading-[19px] tracking-[2.5px] text-[#B45A08] uppercase whitespace-nowrap">
               TRUSTED BY LEADING BRANDS
             </span>
             <div className="w-[28px] flex items-center justify-center">
-               <svg width="28" height="10" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M28 5H1M1 5L5 1M1 5L5 9" stroke="#B45A08" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
-               </svg>
+              <svg width="28" height="10" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 5H1M1 5L5 1M1 5L5 9" stroke="#B45A08" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </div>
           </div>
 
@@ -674,7 +675,7 @@ export default function Home() {
 
           {/* Middle Ornament */}
           <div className="flex items-center justify-center w-[132px] h-[12px] mt-[8px]">
-             <img src={vectorImage} alt="Ornament" className="w-full h-full object-contain opacity-80" />
+            <img src={vectorImage} alt="Ornament" className="w-full h-full object-contain opacity-80" />
           </div>
 
           {/* Description */}
@@ -685,60 +686,60 @@ export default function Home() {
 
           {/* Brands Panel */}
           <div className="mt-[32px] w-full max-w-[1220px] h-auto min-h-[124px] bg-[#FEFDFB] border border-[rgba(0,0,0,0.1)] shadow-[0px_6px_18px_rgba(64,46,26,0.06)] rounded-[12px] flex flex-row items-center justify-between px-[14px] py-[16px] overflow-x-auto box-border gap-[5px]">
-             
-             {/* Rajdhani */}
-             <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={rajdhaniLogo} alt="Rajdhani" className="w-[120px] h-auto object-contain" />
-             </div>
-             
-             <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
 
-             {/* Barbeque Nation */}
-             <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={bbqLogo} alt="Barbeque Nation" className="w-[110px] h-auto object-contain" />
-             </div>
+            {/* Rajdhani */}
+            <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={rajdhaniLogo} alt="Rajdhani" className="w-[120px] h-auto object-contain" />
+            </div>
 
-             <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
+            <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
 
-             {/* Vadilal */}
-             <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={vadilalLogo} alt="Vadilal" className="w-[100px] h-auto object-contain" />
-             </div>
+            {/* Barbeque Nation */}
+            <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={bbqLogo} alt="Barbeque Nation" className="w-[110px] h-auto object-contain" />
+            </div>
 
-             <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
+            <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
 
-             {/* wellwith */}
-             <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={wellwithLogo} alt="Wellwith" className="w-[115px] h-auto object-contain" />
-             </div>
+            {/* Vadilal */}
+            <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={vadilalLogo} alt="Vadilal" className="w-[100px] h-auto object-contain" />
+            </div>
 
-             <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
+            <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
 
-             {/* Wicked Gud */}
-             <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={wickedLogo} alt="Wicked Gud" className="w-[90px] h-auto object-contain" />
-             </div>
+            {/* wellwith */}
+            <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={wellwithLogo} alt="Wellwith" className="w-[115px] h-auto object-contain" />
+            </div>
 
-             <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
+            <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
 
-             {/* Kamaa Club */}
-             <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={kamaaLogo} alt="Kamaa Club" className="w-[125px] h-auto object-contain" />
-             </div>
+            {/* Wicked Gud */}
+            <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={wickedLogo} alt="Wicked Gud" className="w-[90px] h-auto object-contain" />
+            </div>
 
-             <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
+            <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
 
-             {/* Janki */}
-             <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={jankiLogo} alt="Janki" className="w-[110px] h-auto object-contain" />
-             </div>
+            {/* Kamaa Club */}
+            <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={kamaaLogo} alt="Kamaa Club" className="w-[125px] h-auto object-contain" />
+            </div>
 
-             <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
+            <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
 
-             {/* Wooden Home */}
-             <div className="flex flex-col justify-center items-center w-[130px] h-[92px] shrink-0">
-                <img src={woodenLogo} alt="Wooden Home" className="h-[88px] w-auto object-contain" />
-             </div>
+            {/* Janki */}
+            <div className="flex flex-row justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={jankiLogo} alt="Janki" className="w-[110px] h-auto object-contain" />
+            </div>
+
+            <div className="w-[1px] h-[84px] bg-[rgba(180,90,8,0.12)] shrink-0" />
+
+            {/* Wooden Home */}
+            <div className="flex flex-col justify-center items-center w-[130px] h-[92px] shrink-0">
+              <img src={woodenLogo} alt="Wooden Home" className="h-[88px] w-auto object-contain" />
+            </div>
 
           </div>
 
@@ -748,10 +749,10 @@ export default function Home() {
 
       {/* --- Sixth Part: Consultancy --- */}
       <div className="flex flex-col items-center justify-between w-full bg-[#FBF9F4] py-[44px] px-4 md:px-[86px] overflow-x-hidden font-sans">
-        
+
         {/* Header */}
         <div className="flex flex-col items-center gap-[10px] w-full max-w-[1000px] mx-auto min-h-[228px]">
-          
+
           {/* Eyebrow */}
           <div className="flex flex-row justify-center items-center gap-[18px] w-full max-w-[390px] min-h-[25px]">
             <div className="w-[40px] sm:w-[72px] h-[1px] bg-[#C99C5C] shrink-0" />
@@ -788,14 +789,14 @@ export default function Home() {
         <div className="flex flex-row justify-start xl:justify-center items-start gap-[16px] w-full max-w-[1228px] mx-auto overflow-x-auto mt-[40px] pb-6 px-4 xl:px-0 scrollbar-hide">
           {consultancyProjects.map((project, index) => (
             <div key={index} className="flex flex-col items-start w-[232px] h-[330px] bg-[#FFFFFF] rounded-[10px] shrink-0">
-              
+
               {/* Media Stack */}
               <div className="flex flex-col items-center w-[232px] h-[205px]">
                 {/* Project Image */}
                 <div className="w-[232px] h-[174px] rounded-t-[10px] overflow-hidden">
                   <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
                 </div>
-                
+
                 {/* Project Icon */}
                 <div className="flex flex-row justify-center items-center w-[58px] h-[58px] bg-[#FFFFFF] rounded-full shadow-[0px_2px_5px_rgba(0,0,0,0.12)] -mt-[29px] z-10">
                   <div className="w-[31px] h-[31px] flex items-center justify-center">
@@ -810,20 +811,20 @@ export default function Home() {
                 <h3 className="w-[204px] font-sans font-semibold text-[14px] leading-[17px] text-center uppercase text-[#0E0D0C] m-0 truncate">
                   {project.name}
                 </h3>
-                
+
                 {/* Project Scope */}
                 <p className="w-[204px] h-[42px] font-sans font-normal text-[12px] leading-[21px] text-center text-[#0E0D0C] m-0 whitespace-pre-line overflow-hidden">
                   {project.scope}
                 </p>
-                
+
                 {/* Location */}
                 <div className="flex flex-row justify-center items-center gap-[7px] w-[190px] h-[22px] mt-auto">
                   {/* Location Pin */}
                   <div className="w-[15px] h-[18px] flex items-center justify-center">
-                     <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.5 17C7.5 17 14 11.5333 14 6.66667C14 2.98477 11.0899 0 7.5 0C3.91015 0 1 2.98477 1 6.66667C1 11.5333 7.5 17 7.5 17Z" stroke="#B45A08" strokeWidth="1.6"/>
-                        <circle cx="7.5" cy="6.5" r="2.5" fill="#000000" stroke="#B45A08" strokeWidth="1.4"/>
-                     </svg>
+                    <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 17C7.5 17 14 11.5333 14 6.66667C14 2.98477 11.0899 0 7.5 0C3.91015 0 1 2.98477 1 6.66667C1 11.5333 7.5 17 7.5 17Z" stroke="#B45A08" strokeWidth="1.6" />
+                      <circle cx="7.5" cy="6.5" r="2.5" fill="#000000" stroke="#B45A08" strokeWidth="1.4" />
+                    </svg>
                   </div>
                   {/* Project Location */}
                   <span className="font-sans font-semibold text-[13px] leading-[16px] tracking-[0.05em] uppercase text-[#0E0D0C] whitespace-nowrap truncate">
@@ -841,10 +842,10 @@ export default function Home() {
       {/* --- Seventh Part: Awards --- */}
       <div className="flex flex-col xl:flex-row justify-center items-center w-full bg-[#FFFFFF] py-[68px] px-4 md:px-[86px] gap-[34px] font-sans">
         <div className="flex flex-col xl:flex-row justify-between items-center w-full max-w-[1440px] gap-12 xl:gap-[34px]">
-          
+
           {/* Editorial Copy */}
           <div className="flex flex-col justify-center items-start gap-[18px] w-full max-w-[330px] h-auto xl:h-[370px]">
-            
+
             {/* Heading */}
             <div className="flex flex-col items-start w-full">
               <h2 className="font-serif font-semibold text-[30px] leading-[40px] text-[#131210] m-0">
@@ -867,9 +868,9 @@ export default function Home() {
 
             {/* Description */}
             <p className="w-full max-w-[320px] font-sans font-normal text-[14.5px] leading-[23px] text-[#454038] m-0">
-              Honoured with prestigious awards and<br className="hidden sm:block"/>
-              recognitions that reflect a journey<br className="hidden sm:block"/>
-              built on dedication, creativity,<br className="hidden sm:block"/>
+              Honoured with prestigious awards and<br className="hidden sm:block" />
+              recognitions that reflect a journey<br className="hidden sm:block" />
+              built on dedication, creativity,<br className="hidden sm:block" />
               and culinary excellence.
             </p>
 
@@ -879,7 +880,7 @@ export default function Home() {
                 See All Awards
               </span>
               <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                <path d="M4 12H16M16 12L10 6M16 12L10 18" stroke="#B45A08" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4 12H16M16 12L10 6M16 12L10 18" stroke="#B45A08" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </Link>
 
@@ -889,7 +890,7 @@ export default function Home() {
           <div className="flex flex-row justify-start xl:justify-center items-center gap-[16px] w-full max-w-[842px] overflow-x-auto pb-4 xl:pb-0 hide-scrollbar">
             {awardsData.map((award, index) => (
               <div key={index} className="flex flex-col items-start w-[270px] h-[330px] bg-[#FBF9F4] rounded-[8px] shrink-0">
-                
+
                 {/* Image */}
                 <div className="w-[270px] h-[220px] rounded-t-[8px] overflow-hidden">
                   <img src={award.image} alt={award.name} className="w-full h-full object-cover" />
@@ -897,16 +898,16 @@ export default function Home() {
 
                 {/* Content */}
                 <div className="flex flex-row items-start p-[14px_16px_12px_20px] gap-[10px] w-[270px] h-[110px]">
-                  
+
                   {/* Laurel Icon */}
                   <div className="w-[42px] h-[42px] flex items-center justify-center shrink-0">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 20C8 20 6 15 12 12C12 12 8 10 6 12" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M24 20C24 20 26 15 20 12C20 12 24 10 26 12" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M10 24C10 24 9 19 14 17C14 17 11 15 9 17" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M22 24C22 24 23 19 18 17C18 17 21 15 23 17" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M12 28C12 28 11 23 16 21C16 21 13 19 11 21" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M20 28C20 28 21 23 16 21C16 21 19 19 21 21" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M8 20C8 20 6 15 12 12C12 12 8 10 6 12" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M24 20C24 20 26 15 20 12C20 12 24 10 26 12" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M10 24C10 24 9 19 14 17C14 17 11 15 9 17" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M22 24C22 24 23 19 18 17C18 17 21 15 23 17" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M12 28C12 28 11 23 16 21C16 21 13 19 11 21" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M20 28C20 28 21 23 16 21C16 21 19 19 21 21" stroke="#B45A08" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
 
@@ -935,7 +936,7 @@ export default function Home() {
       {/* --- Eighth Part: Contact CTA --- */}
       <div className="w-full bg-[#090807] flex flex-col items-center">
         <div className="w-full flex flex-col lg:flex-row items-stretch lg:aspect-[1440/320]">
-          
+
           {/* Left Image */}
           <div className="w-full h-[320px] lg:h-auto lg:w-[40.97%] relative">
             <img src={contactLeftImg} alt="Catering Spread" className="absolute inset-0 w-full h-full object-cover" />
@@ -944,7 +945,7 @@ export default function Home() {
           {/* Center Content */}
           <div className="w-full lg:w-[38.19%] bg-[#F7F0EA] flex flex-col justify-center items-center py-[40px] lg:py-[26px] px-4 box-border">
             <div className="flex flex-col items-start w-full max-w-[382px] gap-[12px]">
-              
+
               {/* Headline */}
               <div className="flex flex-col items-start w-full">
                 <h2 className="font-serif font-semibold text-[26px] lg:text-[33px] leading-tight lg:leading-[44px] text-[#010101] m-0">
@@ -963,9 +964,9 @@ export default function Home() {
               {/* Ornament */}
               <div className="flex items-center w-[120px] h-[14px]">
                 <svg width="120" height="14" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="0" y1="7" x2="48" y2="7" stroke="#9B5A11" strokeWidth="1"/>
-                  <line x1="72" y1="7" x2="120" y2="7" stroke="#9B5A11" strokeWidth="1"/>
-                  <rect x="56.5" y="4.5" width="5" height="5" transform="rotate(45 56.5 4.5)" stroke="#B96B10" strokeWidth="1"/>
+                  <line x1="0" y1="7" x2="48" y2="7" stroke="#9B5A11" strokeWidth="1" />
+                  <line x1="72" y1="7" x2="120" y2="7" stroke="#9B5A11" strokeWidth="1" />
+                  <rect x="56.5" y="4.5" width="5" height="5" transform="rotate(45 56.5 4.5)" stroke="#B96B10" strokeWidth="1" />
                 </svg>
               </div>
 
@@ -983,7 +984,7 @@ export default function Home() {
                   Work with Chef Michael
                 </span>
                 <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                  <path d="M3.5 11.5H15.5M15.5 11.5L9.5 5.5M15.5 11.5L9.5 17.5" stroke="#F7F5ED" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M3.5 11.5H15.5M15.5 11.5L9.5 5.5M15.5 11.5L9.5 17.5" stroke="#F7F5ED" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
 

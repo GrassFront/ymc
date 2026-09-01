@@ -1,20 +1,11 @@
 import React from 'react';
 import mediaImage from '../assets/media1.png';
-
-const HeritageOrnament = () => (
-  <svg width="220" height="22" viewBox="0 0 220 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 11H89" stroke="#B86A12" strokeWidth="1.5" />
-    <path d="M131 11H220" stroke="#B86A12" strokeWidth="1.5" />
-    <path d="M100 15 C95 15 92 10 92 10 C92 10 95 5 100 5 C105 5 108 10 108 10 C108 10 105 15 100 15 Z" stroke="#B86A12" strokeWidth="1.5" fill="none" />
-    <path d="M120 15 C125 15 128 10 128 10 C128 10 125 5 120 5 C115 5 112 10 112 10 C112 10 115 15 120 15 Z" stroke="#B86A12" strokeWidth="1.5" fill="none" />
-    <path d="M110 8 L110 14" stroke="#B86A12" strokeWidth="1.5" />
-  </svg>
-);
+import heritageOrnamentImg from '../assets/Heritage Ornament.png';
 
 export default function MediaHero() {
   return (
     <section className="w-full bg-[#FAF8F4] overflow-hidden flex justify-center">
-      <div className="w-full max-w-[1440px] flex flex-col lg:flex-row items-center lg:items-center bg-[#FAF8F4] relative lg:pl-[64px] lg:pr-0">
+      <div className="w-full max-w-[1440px] flex flex-col lg:flex-row items-center justify-between bg-[#FAF8F4] relative lg:pl-[64px] lg:pr-0">
         
         {/* Copy */}
         <div className="flex flex-col items-start px-6 py-12 lg:p-0 gap-[24px] w-full lg:w-[610px] shrink-0 z-10 lg:h-[356px] justify-center">
@@ -40,7 +31,7 @@ export default function MediaHero() {
           </div>
 
           <div className="w-[220px] h-[22px] flex items-center shrink-0">
-            <HeritageOrnament />
+            <img src={heritageOrnamentImg} alt="Heritage Ornament" className="w-[220px] h-auto object-contain" />
           </div>
 
           <p className="font-sans font-normal text-[16px] leading-[28px] lg:text-[20px] lg:leading-[35px] text-[#1A1A1A] max-w-[464px]">
@@ -49,7 +40,13 @@ export default function MediaHero() {
         </div>
 
         {/* Visual */}
-        <div className="relative w-full h-[400px] lg:w-[766px] lg:h-[482px] shrink-0 lg:order-1 mt-6 lg:mt-0">
+        <div 
+          className="relative w-full h-[400px] lg:h-[482px] shrink-0 lg:order-1 mt-6 lg:mt-0"
+          style={{
+            width: 'calc(766px + max(0px, (100vw - 1440px) / 2))',
+            marginRight: 'calc(min(0px, 1440px - 100vw) / 2)'
+          }}
+        >
           
           {/* Photo Fade for desktop */}
           <div 

@@ -1,5 +1,6 @@
 import React from 'react';
 import serviceslast from '../assets/serviceslast.png';
+import knifeAndLeaves from '../assets/Knife & Leaves.png';
 
 export default function CulinaryVisionCTA() {
   return (
@@ -45,16 +46,21 @@ export default function CulinaryVisionCTA() {
         </div>
 
         {/* Right Image */}
-        <div className="w-full h-[300px] md:h-[400px] lg:w-[763px] lg:h-[420px] shrink-0">
-          <img 
-            src={serviceslast} 
-            alt="Chef Michael plating a dish" 
-            className="w-full h-full object-cover object-center"
-            onError={(e) => {
-              // Fallback to a valid unsplash image if local asset is missing/broken
-              e.target.src = 'https://images.unsplash.com/photo-1581349485608-9469926a8e5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=761&h=421&q=80';
-            }}
-          />
+        <div className="w-full h-[300px] md:h-[400px] lg:w-[763px] lg:h-[420px] shrink-0 relative">
+          <div 
+            className="w-full h-full lg:absolute lg:top-0 lg:left-0"
+            style={{ width: 'calc(100% + max(0px, 50vw - 720px))' }}
+          >
+            <img 
+              src={serviceslast} 
+              alt="Chef Michael plating a dish" 
+              className="w-full h-full object-cover object-left"
+              onError={(e) => {
+                // Fallback to a valid unsplash image if local asset is missing/broken
+                e.target.src = 'https://images.unsplash.com/photo-1581349485608-9469926a8e5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=761&h=421&q=80';
+              }}
+            />
+          </div>
         </div>
       </div>
 
@@ -73,12 +79,7 @@ export default function CulinaryVisionCTA() {
         <div className="hidden lg:block flex-grow min-w-[20px]" />
 
         <div className="w-[240px] h-[70px] shrink-0 flex justify-center items-center">
-          <svg width="240" height="70" viewBox="0 0 240 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 55 Q 80 55, 140 55 Q 160 55, 175 45 Q 195 30, 225 25" stroke="#D6B98D" strokeWidth="1.5" fill="none"/>
-            <path d="M25 55 Q 40 40, 100 40 L 140 55" stroke="#D6B98D" strokeWidth="1.5" fill="none"/>
-            <path d="M175 45 L 210 32 L 215 38 L 165 52 Z" stroke="#D6B98D" strokeWidth="1.5" fill="none"/>
-            <path d="M140 55 Q 120 20, 235 12 Q 180 30, 140 55" stroke="#D6B98D" strokeWidth="1.5" fill="none"/>
-          </svg>
+          <img src={knifeAndLeaves} alt="Knife & Leaves" className="w-full h-full object-contain" />
         </div>
 
       </div>

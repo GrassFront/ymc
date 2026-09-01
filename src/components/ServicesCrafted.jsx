@@ -4,6 +4,11 @@ import consulting from '../assets/consulting.png';
 import events from '../assets/events.png';
 import workshop from '../assets/workshop.png';
 import brand from '../assets/brand.png';
+import circluar1 from '../assets/Icon Circle1.png';
+import circluar2 from '../assets/Icon Circle2.png';
+import circluar3 from '../assets/Icon Circle3.png';
+import circluar4 from '../assets/Icon Circle4.png';
+import circluar5 from '../assets/Icon Circle5.png';
 
 const servicesData = [
   {
@@ -11,65 +16,35 @@ const servicesData = [
     title: 'Private Dining',
     description: 'Bespoke, chef-led dining experiences for homes, celebrations, and intimate events.',
     img: pvtdinning,
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B86B16" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M6 13C6 9.68629 8.68629 7 12 7C15.3137 7 18 9.68629 18 13H6Z" />
-        <path d="M12 7V4M10 4H14" />
-        <path d="M4 15H20" />
-      </svg>
-    )
+    icon: <img src={circluar1} alt="Icon 1" className="w-[94px] h-[94px] rounded-full object-contain" />
   },
   {
     num: '02',
     title: 'Consulting\n(YCM Studio)',
     description: 'Restaurant, café, and hotel consultancy — from kitchen planning to full operational launch.',
     img: consulting,
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B86B16" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 21H21" />
-        <path d="M5 21V7L12 3L19 7V21" />
-        <path d="M9 21V11H15V21" />
-        <path d="M9 7H15" />
-      </svg>
-    )
+    icon: <img src={circluar2} alt="Icon 2" className="w-[94px] h-[94px] rounded-full object-contain" />
   },
   {
     num: '03',
     title: 'Events',
     description: 'Live culinary appearances, festivals, and corporate hospitality experiences.',
     img: events,
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B86B16" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-        <path d="M16 2V6M8 2V6M3 10H21" />
-        <path d="M12 14L13 16L15 16.5L13.5 18L14 20L12 19L10 20L10.5 18L9 16.5L11 16L12 14Z" />
-      </svg>
-    )
+    icon: <img src={circluar3} alt="Icon 3" className="w-[94px] h-[94px] rounded-full object-contain" />
   },
   {
     num: '04',
     title: 'Workshops &\nMasterclasses',
     description: 'Hands-on culinary training for aspiring chefs and food enthusiasts.',
     img: workshop,
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B86B16" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M6 13.5C6 11.567 7.567 10 9.5 10C9.5 7.51472 11.5147 5.5 14 5.5C16.4853 5.5 18.5 7.51472 18.5 10C20.433 10 22 11.567 22 13.5C22 15.433 20.433 17 18.5 17H6C4.067 17 2.5 15.433 2.5 13.5C2.5 11.567 4.067 10 6 10" />
-        <path d="M8 17V21H20V17" />
-      </svg>
-    )
+    icon: <img src={circluar4} alt="Icon 4" className="w-[94px] h-[94px] rounded-full object-contain" />
   },
   {
     num: '05',
     title: 'Brand\nCollaborations',
     description: 'Sponsored content, recipe development, and campaign partnerships for food & lifestyle brands.',
     img: brand,
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B86B16" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M11 5L15 3V17L11 15H5C4.44772 15 4 14.5523 4 14V6C4 5.44772 4.44772 5 5 5H11Z" />
-        <path d="M15 10C16.6569 10 18 11.3431 18 13" />
-        <path d="M15 6C18.866 6 22 9.13401 22 13" />
-      </svg>
-    )
+    icon: <img src={circluar5} alt="Icon 5" className="w-[94px] h-[94px] rounded-full object-contain" />
   }
 ];
 

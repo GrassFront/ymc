@@ -1,4 +1,5 @@
 import React from 'react';
+import vectorIcon from '../../assets/Editable Vector.png';
 
 /**
  * Heritage Divider / Editable Vector
@@ -13,39 +14,7 @@ export default function HeritageDivider({ className = '' }) {
       <div className="w-[78px] h-[0px] border-t-[1.2px] border-[#B45A08]" />
 
       {/* Center Ornamental Vector Icon */}
-      <svg
-        width="24"
-        height="18"
-        viewBox="0 0 24 18"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="flex-shrink-0"
-      >
-        <path
-          d="M12 1L15.5 4.5L12 8L8.5 4.5L12 1Z"
-          stroke="#B45A08"
-          strokeWidth="1.2"
-          fill="none"
-        />
-        <path
-          d="M4.5 5.5L8 9L4.5 12.5L1 9L4.5 5.5Z"
-          stroke="#B45A08"
-          strokeWidth="1.2"
-          fill="none"
-        />
-        <path
-          d="M19.5 5.5L23 9L19.5 12.5L16 9L19.5 5.5Z"
-          stroke="#B45A08"
-          strokeWidth="1.2"
-          fill="none"
-        />
-        <path
-          d="M12 9.5L15.5 13L12 16.5L8.5 13L12 9.5Z"
-          stroke="#B45A08"
-          strokeWidth="1.2"
-          fill="none"
-        />
-      </svg>
+      <img src={vectorIcon} alt="Divider Icon" className="flex-shrink-0" style={{ height: '18px', objectFit: 'contain' }} />
 
       {/* Right Vector Line */}
       <div className="w-[78px] h-[0px] border-t-[1.2px] border-[#B45A08]" />

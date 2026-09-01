@@ -25,14 +25,14 @@ export const FEATURED_AWARDS = [
   {
     id: 'best-celebrity-chef',
     name: 'The Best Celebrity Chef 2025',
-    description: 'Awarded by Padma Shri Chef Sanjeev Kapoor.',
+    description: 'Awarded by Padma Shri\nChef Sanjeev Kapoor.',
     year: '2025',
     image: celebChefImg,
   },
   {
     id: 'best-food-consultant',
-    name: 'The Best Food Consultant 2025',
-    description: 'Conferred by Padma Shri Chef Sanjeev Kapoor.',
+    name: 'The Best Food Consultant\n2025',
+    description: 'Conferred by Padma Shri\nChef Sanjeev Kapoor.',
     year: '2025',
     image: foodConsultantImg,
   },
@@ -79,6 +79,6 @@ export const MORE_AWARDS = [
 ];
 
 export const AWARDS_QUOTE = {
-  text: 'Every award is not just a recognition, it is a responsibility to do even better every day.',
+  text: 'Every award is not just a recognition,\nit is a responsibility to do even better every day.',
   signature: '— Chef Michael',
 };

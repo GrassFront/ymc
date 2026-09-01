@@ -20,10 +20,10 @@ export default function GalleryHero() {
     <section className="w-full bg-[#FAF8F4] overflow-hidden flex justify-center items-center">
       {/* Outer 1440px Desktop Container */}
       <div className="w-full max-w-[1440px] min-h-[524px] flex flex-col lg:flex-row justify-between items-center lg:pr-[40px] pr-0 py-8 lg:py-0">
-        
+
         {/* Left Copy Section: Gallery Hero / Copy */}
         <div className="w-full lg:w-[620px] h-auto lg:h-[524px] flex flex-col items-start justify-center px-6 sm:px-12 lg:pl-[78px] lg:pr-[50px] lg:pt-[82px] lg:pb-[60px] gap-[22px] z-10">
-          
+
           {/* Eyebrow */}
           <span className="w-full lg:w-[470px] font-sans font-semibold text-[13px] leading-[16px] tracking-[2.8px] text-[#B45A08] uppercase">
             {eyebrow}
@@ -51,7 +51,6 @@ export default function GalleryHero() {
           
           {/* Scaling wrapper to preserve exact pixel positions at all screen sizes */}
           <div className="w-[820px] h-[524px] relative transform scale-[0.34] min-[360px]:scale-[0.42] sm:scale-[0.68] md:scale-[0.85] lg:scale-100 origin-center lg:origin-right flex-shrink-0">
-            
             {/* Botanical Branch / Background Accent Vector */}
             <BotanicalBranch />
 
@@ -127,7 +126,7 @@ export default function GalleryHero() {
                         alt={card.alt}
                         className="w-full h-full object-cover"
                         style={{
-                          transform: `rotate(${card.rotation}deg)`,
+                          objectPosition: card.objectPosition || 'center'
                         }}
                       />
                     </div>
