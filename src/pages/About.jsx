@@ -362,12 +362,12 @@ export default function About() {
             {/* CTA Button */}
             <Link 
               to="/contact" 
-              className="flex flex-row justify-between items-center w-full max-w-[305px] h-[64px] bg-[#D4A017] border border-[#ED9E47] pl-[30px] pr-[24px] box-border shrink-0 cursor-pointer hover:bg-[#c29215] transition-colors mt-[2px] shadow-sm no-underline"
+              className="flex flex-row justify-between items-center w-full max-w-[305px] h-[clamp(46px,1.5vw+36px,64px)] bg-[#D4A017] border border-[#ED9E47] px-[clamp(16px,1.5vw+10px,30px)] pr-[clamp(14px,1.5vw+8px,24px)] box-border shrink-0 cursor-pointer hover:bg-[#c29215] transition-colors mt-[2px] shadow-sm no-underline"
             >
-              <span className="font-['Inter'] font-semibold text-[15px] leading-[18px] text-[#F5F2EB]">
+              <span className="font-['Inter'] font-semibold text-[clamp(13.5px,0.8vw+10px,15px)] leading-none text-[#F5F2EB] whitespace-nowrap">
                 Work With Chef Michael
               </span>
-              <span className="font-['Inter'] font-normal text-[22px] leading-[27px] text-[#F5F2EB]">
+              <span className="font-['Inter'] font-normal text-[clamp(16px,1vw+12px,22px)] leading-none text-[#F5F2EB]">
                 →
               </span>
             </Link>

@@ -35,11 +35,11 @@ export default function CulinaryVisionCTA() {
             experiences that truly stand out.
           </p>
 
-          <button className="flex flex-row justify-between items-center px-[25px] pr-[20px] w-full max-w-[245px] h-[62px] bg-[#D4A017] border border-[#EB9E47] hover:bg-[#b88c14] transition-colors mt-[15px]">
-            <span className="font-sans font-semibold text-[17px] leading-[21px] text-white">
+          <button className="flex flex-row justify-between items-center px-[clamp(16px,1.5vw+8px,25px)] pr-[clamp(14px,1.5vw+6px,20px)] w-full max-w-[245px] h-[clamp(46px,1.5vw+36px,62px)] bg-[#D4A017] border border-[#EB9E47] hover:bg-[#b88c14] transition-colors mt-[15px] cursor-pointer">
+            <span className="font-sans font-semibold text-[clamp(14px,0.8vw+10px,17px)] leading-none text-white whitespace-nowrap">
               Get In Touch
             </span>
-            <span className="font-sans font-normal text-[23px] leading-[28px] text-white">
+            <span className="font-sans font-normal text-[clamp(16px,1vw+12px,23px)] leading-none text-white">
               →
             </span>
           </button>

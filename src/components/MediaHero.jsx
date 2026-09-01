@@ -41,9 +41,8 @@ export default function MediaHero() {
 
         {/* Visual */}
         <div 
-          className="relative w-full h-[400px] lg:h-[482px] shrink-0 lg:order-1 mt-6 lg:mt-0"
+          className="relative w-full lg:w-[calc(766px_+_max(0px,_(100vw_-_1440px)_/_2))] h-[280px] sm:h-[380px] lg:h-[482px] shrink-0 lg:order-1 mt-6 lg:mt-0"
           style={{
-            width: 'calc(766px + max(0px, (100vw - 1440px) / 2))',
             marginRight: 'calc(min(0px, 1440px - 100vw) / 2)'
           }}
         >

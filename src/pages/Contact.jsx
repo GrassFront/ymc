@@ -130,11 +130,11 @@ export default function Contact() {
                 Haryana, India
               </div>
 
-              <button className="box-border flex flex-row justify-center items-center px-[18px] gap-[14px] w-full max-w-[250px] h-[42px] border border-[#C48F45] rounded-[4px] mt-2 group hover:bg-[#FBF8F2] transition-colors">
-                <span className="font-semibold text-[14px] leading-[17px] text-[#B45A08]">
+              <button className="box-border flex flex-row justify-center items-center px-[clamp(12px,1.2vw+6px,18px)] gap-[clamp(8px,0.8vw+4px,14px)] w-full max-w-[250px] h-[clamp(36px,1vw+28px,42px)] border border-[#C48F45] rounded-[4px] mt-2 group hover:bg-[#FBF8F2] transition-colors cursor-pointer">
+                <span className="font-semibold text-[clamp(12.5px,0.8vw+9px,14px)] leading-none text-[#B45A08] whitespace-nowrap">
                   Open in Google Maps
                 </span>
-                <ArrowRight className="w-[20px] h-[24px] text-[#B45A08] group-hover:translate-x-1 transition-transform" strokeWidth={1.5} />
+                <ArrowRight className="w-[clamp(14px,0.8vw+10px,20px)] h-[clamp(16px,0.8vw+12px,24px)] text-[#B45A08] group-hover:translate-x-1 transition-transform" strokeWidth={1.5} />
               </button>
             </div>
           </div>
@@ -189,11 +189,11 @@ export default function Contact() {
               </div>
 
               {/* Send Media Enquiry Button */}
-              <button className="box-border flex flex-row justify-between items-center px-[20px] sm:px-[25px] w-full sm:w-[260px] h-[52px] sm:h-[58px] bg-[#D4A017] border border-[#EB9E47] hover:bg-[#B8860B] transition-colors group rounded cursor-pointer">
-                <span className="font-semibold text-[15px] sm:text-[17px] leading-[21px] text-white">
+              <button className="box-border flex flex-row justify-between items-center px-[clamp(16px,1.5vw+8px,25px)] w-full sm:w-[260px] h-[clamp(44px,1.5vw+34px,58px)] bg-[#D4A017] border border-[#EB9E47] hover:bg-[#B8860B] transition-colors group rounded cursor-pointer">
+                <span className="font-semibold text-[clamp(13.5px,0.8vw+10px,17px)] leading-none text-white whitespace-nowrap">
                   Send Media Enquiry
                 </span>
-                <ArrowRight className="w-[20px] sm:w-[23px] h-[20px] sm:h-[28px] text-white group-hover:translate-x-1 transition-transform" strokeWidth={1.5} />
+                <ArrowRight className="w-[clamp(16px,0.8vw+12px,23px)] h-[clamp(18px,0.8vw+14px,28px)] text-white group-hover:translate-x-1 transition-transform flex-shrink-0" strokeWidth={1.5} />
               </button>
             </div>
 

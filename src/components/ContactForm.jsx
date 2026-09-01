@@ -249,11 +249,11 @@ export default function ContactForm() {
         ></textarea>
 
         {/* Submit Button */}
-        <button className="box-border flex flex-row justify-center items-center px-5 gap-[26px] w-full h-[54px] sm:h-[62px] bg-[#D4A017] border border-[#EB9E47] rounded hover:bg-[#B8860B] transition-colors mt-2 cursor-pointer">
-          <span className="font-semibold text-[16px] sm:text-[17px] leading-[21px] text-white">
+        <button className="box-border flex flex-row justify-center items-center px-[clamp(16px,1.5vw+8px,25px)] gap-[clamp(12px,1.2vw+8px,26px)] w-full h-[clamp(46px,1.5vw+36px,62px)] bg-[#D4A017] border border-[#EB9E47] rounded hover:bg-[#B8860B] transition-colors mt-2 cursor-pointer">
+          <span className="font-semibold text-[clamp(14px,0.8vw+10px,17px)] leading-none text-white whitespace-nowrap">
             Send Enquiry
           </span>
-          <ArrowRight className="w-[20px] h-[20px] text-white" strokeWidth={1.5} />
+          <ArrowRight className="w-[clamp(16px,0.8vw+12px,20px)] h-[clamp(16px,0.8vw+12px,20px)] text-white flex-shrink-0" strokeWidth={1.5} />
         </button>
 
         {/* Privacy Note */}

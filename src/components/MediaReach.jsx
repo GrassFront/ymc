@@ -59,11 +59,11 @@ export default function MediaReach() {
 
         {/* Digital Reach Heading */}
         <div className="flex flex-row items-center justify-center gap-[10px] md:gap-[20px] w-full mt-4 lg:mt-0">
-          <div className="w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
-          <h2 className="font-serif font-semibold text-[22px] md:text-[30px] leading-[40px] tracking-[0.05em] text-[#B45A08] whitespace-nowrap">
+          <div className="hidden sm:block w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
+          <h2 className="font-serif font-semibold text-[18px] sm:text-[22px] md:text-[30px] leading-[30px] sm:leading-[40px] tracking-[0.05em] text-[#B45A08] whitespace-nowrap">
             OUR DIGITAL REACH
           </h2>
-          <div className="w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
+          <div className="hidden sm:block w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
         </div>
 
         {/* Digital Reach Metrics Container */}
@@ -90,11 +90,11 @@ export default function MediaReach() {
 
         {/* Featured In Heading */}
         <div className="flex flex-row items-center justify-center gap-[10px] md:gap-[20px] w-full mt-8 lg:mt-6">
-          <div className="w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
-          <h2 className="font-serif font-semibold text-[22px] md:text-[30px] leading-[40px] tracking-[0.05em] text-[#B45A08] whitespace-nowrap">
+          <div className="hidden sm:block w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
+          <h2 className="font-serif font-semibold text-[18px] sm:text-[22px] md:text-[30px] leading-[30px] sm:leading-[40px] tracking-[0.05em] text-[#B45A08] whitespace-nowrap">
             FEATURED IN
           </h2>
-          <div className="w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
+          <div className="hidden sm:block w-[80px] md:w-[115px] shrink-0"><SmallOrnament /></div>
         </div>
 
         {/* Featured Logos Container */}

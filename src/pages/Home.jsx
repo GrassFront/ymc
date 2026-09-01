@@ -235,17 +235,16 @@ export default function Home() {
   return (
     <div className="w-full bg-[#FBF9F4] flex flex-col items-center overflow-x-hidden font-['Inter'] relative min-h-[836px]">
 
-      {/* Background Image Area (Bleeds to right edge of screen) */}
+      {/* Background Image Area (Bleeds to right edge of screen on desktop) */}
       <div
-        className="absolute top-0 right-0 h-[754px] bg-no-repeat bg-cover bg-left z-0"
+        className="absolute top-0 right-0 h-[650px] sm:h-[754px] bg-no-repeat bg-cover bg-left z-0 w-full lg:w-[calc(776px_+_max(0px,_(100%_-_1440px)_/_2))] opacity-30 lg:opacity-100"
         style={{
           backgroundImage: `url("${heroImage}")`,
-          width: 'calc(776px + max(0px, (100% - 1440px) / 2))'
         }}
       >
         {/* Vertical Left Fade */}
         <div
-          className="absolute left-[-150px] top-0 w-[200px] h-full"
+          className="hidden lg:block absolute left-[-150px] top-0 w-[200px] h-full"
           style={{ background: 'linear-gradient(90deg, #FBF9F4 0%, rgba(251, 249, 244, 0.72) 62%, rgba(251, 249, 244, 0) 100%)' }}
         ></div>
 
@@ -282,7 +281,7 @@ export default function Home() {
 
           {/* Script */}
           <div
-            className="w-full max-w-[430px] font-['Allura'] font-normal text-[52px] sm:text-[64px] lg:text-[72px] leading-tight lg:leading-[78px] tracking-[0px] text-[#D4A017] -rotate-[3.68deg] my-2"
+            className="w-full max-w-[430px] font-['Allura'] font-normal text-[36px] sm:text-[56px] lg:text-[72px] leading-tight lg:leading-[78px] tracking-[0px] text-[#D4A017] -rotate-[3.68deg] my-1 sm:my-2"
           >
             Masterpiece!
           </div>
@@ -307,21 +306,21 @@ export default function Home() {
           </div>
 
           {/* Buttons Container */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-[25px] w-full max-w-[480px]">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-[25px] w-full max-w-[480px]">
             {/* Primary CTA */}
-            <button className="box-border flex flex-row justify-center items-center px-[24px] h-[48px] bg-[#D4A017] rounded-[5px] gap-[16px] hover:bg-[#c29215] transition-colors group cursor-pointer w-full sm:w-auto">
-              <span className="font-medium text-[16px] leading-[20px] text-[#FAF8F4] whitespace-nowrap">
+            <button className="box-border flex flex-row justify-center items-center px-[clamp(10px,1vw+4px,24px)] py-[clamp(6px,0.6vw+2px,16px)] h-[clamp(36px,1vw+28px,48px)] bg-[#D4A017] rounded-[5px] gap-[clamp(6px,0.6vw+2px,16px)] hover:bg-[#c29215] transition-colors group cursor-pointer w-full sm:w-auto">
+              <span className="font-medium text-[clamp(12.5px,0.6vw+9.5px,16px)] leading-none text-[#FAF8F4] whitespace-nowrap">
                 Book Chef Michael
               </span>
-              <ArrowRight className="w-[20px] h-[20px] text-[#FAF8F4] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
+              <ArrowRight className="w-[clamp(13px,0.6vw+9px,20px)] h-[clamp(13px,0.6vw+9px,20px)] text-[#FAF8F4] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
             </button>
 
             {/* Secondary CTA */}
-            <button className="box-border flex flex-row justify-center items-center px-[24px] h-[48px] bg-[#FAF8F4] border border-[#B45A08] rounded-[5px] gap-[16px] hover:bg-[#F2EFE8] transition-colors group cursor-pointer w-full sm:w-auto">
-              <span className="font-medium text-[16px] leading-[20px] text-[#B45A08] whitespace-nowrap">
+            <button className="box-border flex flex-row justify-center items-center px-[clamp(10px,1vw+4px,24px)] py-[clamp(6px,0.6vw+2px,16px)] h-[clamp(36px,1vw+28px,48px)] bg-[#FAF8F4] border border-[#B45A08] rounded-[5px] gap-[clamp(6px,0.6vw+2px,16px)] hover:bg-[#F2EFE8] transition-colors group cursor-pointer w-full sm:w-auto">
+              <span className="font-medium text-[clamp(12.5px,0.6vw+9.5px,16px)] leading-none text-[#B45A08] whitespace-nowrap">
                 Explore Services
               </span>
-              <ArrowRight className="w-[20px] h-[20px] text-[#D4A017] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
+              <ArrowRight className="w-[clamp(13px,0.6vw+9px,20px)] h-[clamp(13px,0.6vw+9px,20px)] text-[#D4A017] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
             </button>
           </div>
 
@@ -514,11 +513,11 @@ export default function Home() {
               </div>
 
               {/* View Full Menu Button */}
-              <button className="box-border flex flex-row justify-center items-center px-[24px] py-[16px] w-[250px] h-[56px] bg-[#FAF8F4] border border-[#B45A08] rounded-[5px] gap-[16px] hover:bg-[#F2EFE8] transition-colors group cursor-pointer">
-                <span className="font-['Inter'] font-medium text-[16px] leading-[20px] text-[#B45A08]">
+              <button className="box-border flex flex-row justify-center items-center px-[clamp(14px,1.2vw+8px,24px)] py-[clamp(10px,0.8vw+6px,16px)] w-auto sm:w-[250px] max-w-full h-[clamp(42px,1.2vw+34px,56px)] bg-[#FAF8F4] border border-[#B45A08] rounded-[5px] gap-[clamp(8px,0.8vw+4px,16px)] hover:bg-[#F2EFE8] transition-colors group cursor-pointer">
+                <span className="font-['Inter'] font-medium text-[clamp(13.5px,0.8vw+9.5px,16px)] leading-none text-[#B45A08] whitespace-nowrap">
                   View Full Menu
                 </span>
-                <ArrowRight className="w-[20px] h-[20px] text-[#D4A017] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
+                <ArrowRight className="w-[clamp(14px,0.8vw+10px,20px)] h-[clamp(14px,0.8vw+10px,20px)] text-[#D4A017] group-hover:translate-x-1 transition-transform" strokeWidth={2} />
               </button>
 
             </div>
@@ -979,11 +978,11 @@ export default function Home() {
               </p>
 
               {/* CTA Button */}
-              <Link to="/contact" className="flex flex-row justify-center items-center px-[22px] h-[44px] bg-[#C77A1D] rounded-[4px] gap-[14px] hover:bg-[#B56A15] transition-colors mt-[4px] text-decoration-none">
-                <span className="font-sans font-semibold text-[14px] leading-[17px] text-[#F7F5ED]">
+              <Link to="/contact" className="flex flex-row justify-center items-center px-[clamp(14px,1.2vw+8px,22px)] h-[clamp(38px,1vw+30px,44px)] bg-[#C77A1D] rounded-[4px] gap-[clamp(8px,0.8vw+4px,14px)] hover:bg-[#B56A15] transition-colors mt-[4px] no-underline">
+                <span className="font-sans font-semibold text-[clamp(12.5px,0.8vw+9px,14px)] leading-none text-[#F7F5ED] whitespace-nowrap">
                   Work with Chef Michael
                 </span>
-                <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-[clamp(13px,0.8vw+9px,19px)] h-[clamp(15px,0.8vw+11px,23px)]">
                   <path d="M3.5 11.5H15.5M15.5 11.5L9.5 5.5M15.5 11.5L9.5 17.5" stroke="#F7F5ED" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>

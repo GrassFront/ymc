@@ -34,11 +34,11 @@ export default function ServicesHero() {
             YCM Studio can bring your culinary vision to life.
           </p>
 
-          <button className="flex flex-row justify-between items-center px-[24px] pr-[20px] w-[250px] h-[62px] bg-[#D4A017] border border-[#ED9E47] hover:bg-[#b88c14] transition-colors mt-2 xl:mt-0 cursor-pointer">
-            <span className="font-sans font-semibold text-[16px] leading-[19px] text-white">
+          <button className="flex flex-row justify-between items-center px-[clamp(16px,1.5vw+8px,24px)] pr-[clamp(14px,1.5vw+6px,20px)] w-full max-w-[250px] h-[clamp(46px,1.5vw+36px,62px)] bg-[#D4A017] border border-[#ED9E47] hover:bg-[#b88c14] transition-colors mt-2 xl:mt-0 cursor-pointer">
+            <span className="font-sans font-semibold text-[clamp(14px,0.8vw+10px,16px)] leading-none text-white whitespace-nowrap">
               Let's Work Together
             </span>
-            <span className="font-sans font-normal text-[22px] leading-[27px] text-white">
+            <span className="font-sans font-normal text-[clamp(16px,1vw+12px,22px)] leading-none text-white">
               →
             </span>
           </button>

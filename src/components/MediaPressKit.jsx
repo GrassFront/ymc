@@ -104,11 +104,11 @@ export default function MediaPressKit() {
           </div>
 
           {/* Download Press Kit Button */}
-          <button className="flex flex-row justify-between items-center px-[25px] py-[0px] pr-[20px] gap-[26px] w-full max-w-[380px] h-[62px] bg-[#D4A017] border border-[#EB9E47] rounded-[4px] mt-6 hover:bg-[#C29012] transition-colors cursor-pointer group">
-            <span className="font-sans font-semibold text-[16px] leading-[19px] text-white">
+          <button className="flex flex-row justify-between items-center px-[clamp(16px,1.5vw+8px,25px)] pr-[clamp(14px,1.5vw+6px,20px)] gap-[clamp(12px,1.2vw+8px,26px)] w-full max-w-[380px] h-[clamp(46px,1.5vw+36px,62px)] bg-[#D4A017] border border-[#EB9E47] rounded-[4px] mt-6 hover:bg-[#C29012] transition-colors cursor-pointer group">
+            <span className="font-sans font-semibold text-[clamp(13px,0.8vw+9.5px,16px)] leading-none text-white whitespace-nowrap">
               Download Press Kit (PDF / ZIP)
             </span>
-            <span className="font-sans font-normal text-[23px] leading-[28px] text-white group-hover:translate-y-1 transition-transform">
+            <span className="font-sans font-normal text-[clamp(16px,1vw+12px,23px)] leading-none text-white group-hover:translate-y-1 transition-transform flex-shrink-0">
               ↓
             </span>
           </button>
